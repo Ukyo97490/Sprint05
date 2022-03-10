@@ -5,10 +5,10 @@ async function render() {
   for (country in data) {
     let zone = data[country].area.toLocaleString("en-US");
     let ppl = data[country].population.toLocaleString("en-US");
-    result += `<tr><td class="h5"> ${data[country].name.official}</td>
-       <td> ${zone}</td> 
-       <td> ${ppl}</td>
-       <td> ${data[country].capital}</td></tr>`;
+    result += `<tr><td class="h5 table-responsive"> ${data[country].name.official}</td>
+       <td class="text-end table-responsive"> ${zone}</td> 
+       <td class="text-end table-responsive "> ${ppl}</td>
+       <td class="table-responsive"> ${data[country].capital}</td></tr>`;
   }
   document.getElementById("table").innerHTML = result;
 }
