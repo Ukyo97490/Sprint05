@@ -16,11 +16,31 @@
     <title>Eu - European region countries</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-dark px-4">
-      <!-- dans la classe nav on indique bien que celle-ci sera noire, fixed les dimensions ect -->
-      <a class="navbar-brand" href="" target="#">Eu</a>
+    <!-- <nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-dark px-4"> -->
+    <!-- dans la classe nav on indique bien que celle-ci sera noire, fixed les dimensions ect -->
+    <!-- <a class="navbar-brand" href="" target="index.html">Eu</a> -->
+
+    <!-- TEST -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+      <a class="navbar-brand" href="" target="index.html">Eu</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+
       <!-- target="_blank" ouvre un lien dans un nouvel onglet ou une nouvelle page. -->
-      <button
+      <!-- <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -29,9 +49,11 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
-        <!-- le button et le span permet au texte "Eu" d'agir -->
-      </button>
+        <span class="navbar-toggler-icon"> </span>
+       
+        <a href="table.html">Table</a>
+        le button et le span permet au texte "Eu" d'agir
+      </button> -->
     </nav>
 
     <div>
@@ -47,6 +69,10 @@
           >
         </p>
         <h2>List of countries</h2>
+        <button class="btn btn-sm btn-outline-secondary" type="button">
+          Refresh
+        </button>
+
         <ul id="list"></ul>
         <p class="px-1">
           Source:
